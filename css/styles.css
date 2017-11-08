@@ -1,0 +1,183 @@
+body{
+    background: #F9F9F9; /* Set HTML background color */
+    font: 14px "Lucida Grande";  /* Set global font size & family */
+    color: #464646; /* Set global text color */
+}
+
+p{
+    margin: 10px 0px 10px 0px; /* Add some padding to the top and bottom of the <p> tags */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-md-2 {width: 23%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.right {float: right;}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img {
+    float: left;
+}
+
+.img img{
+    width: 90%;
+    height: 100px;
+}
+
+.box {
+    width: 40%;
+    margin: 10% auto;
+    border: 1px solid darkgray;
+    border-radius: 0;
+}
+
+#header {
+    background-color: grey;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#main {
+    padding: 15px;
+    display: inline-block;
+    background-color: #cbcbcb;
+}
+
+#side {
+    background-color: cadetblue;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#side img {
+    float: left;
+    padding: 5px;
+    width: 50%;
+    height: auto;
+}
+
+#camera {
+    background-color: #33b5e5;
+    float: left;
+    width: 47%;
+    height: auto;
+    margin: 10px;
+    overflow: hidden;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#mix_img {
+    background-color: #33b5e5;
+    padding: 15px;
+    width: 47%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#img_div {
+    width: 80%;
+    padding: 5px;
+    margin: 15px auto;
+    border: 1px solid #cbcbcb;
+}
+
+#img_div:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#canvas {
+    display: none;
+    width: 500px;
+    height: 400px;
+}
+
+.capture {float: left;}
+.upload {float: left;}
+
+.button {
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+form{
+    margin-top: 10px; /* Make some more distance away from the description text */
+}
+
+form .submit_button{
+    background: #F9F9F9; /* Set button background */
+    border: 1px solid #DFDFDF; /* Small border around our submit button */
+    padding: 8px; /* Add some more space around our button text */
+}
+
+.input{
+    font: normal 16px Georgia;
+    border: 1px solid #DFDFDF;
+    padding: 8px;
+    width: 80%;
+}
+
+.form-group {
+    margin: 40px;
+}
+
+#footer {
+    background-color: grey;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
